@@ -10,7 +10,7 @@
             </div>
 
                 <div class="footer-copyright white-text">
-                <div class="container center">&copy All right reserved, Blogerz</div>
+                <div class="container center">&copy All right reserved, Blogbita</div>
                 </div>
         </footer>
 

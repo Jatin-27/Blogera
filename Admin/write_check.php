@@ -34,7 +34,7 @@
         }
         else
             {
-                $_SESSION['message']="<div class='red black-text'>Sorry, Image size exceded 2 Mb.</div>";
+                $_SESSION['message']="<div class='red black-text'>Sorry, Image size exceeded 2 Mb.</div>";
                 header("Location: write.php");
             }
     }

@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 14, 2019 at 11:07 AM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Generation Time: Jul 04, 2021 at 02:45 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -33,16 +32,16 @@ CREATE TABLE `posts` (
   `title` varchar(255) NOT NULL,
   `content` text NOT NULL,
   `author` varchar(100) NOT NULL,
-  `feature_image` varchar(200) NOT NULL
+  `feature_image` varchar(200) NOT NULL,
+  `view` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `posts`
 --
 
-INSERT INTO `posts` (`id`, `title`, `content`, `author`, `feature_image`) VALUES
-(1, 'jatin', '&lt;p&gt;this is content&lt;/p&gt;\r\n', '', ''),
-(2, 'yugvodh', '&lt;p&gt;jkllkhjk&lt;/p&gt;\r\n', '', '');
+INSERT INTO `posts` (`id`, `title`, `content`, `author`, `feature_image`, `view`) VALUES
+(52, 'This is a new post for testing djhfjdhfjhdjfhjdhfjd  jhsfjhsjhjshjhsjhsj  hsjsdhjshdjshdjsh     ', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis malesuada porttitor. Pellentesque tristique eros ac velit convallis, efficitur rutrum nibh pretium. Nulla sed enim et arcu porttitor placerat eget sed nibh. Morbi porttitor, purus a hendrerit varius, libero ligula maximus metus, id feugiat turpis est non ante. Duis venenatis volutpat lacus quis viverra. Phasellus mollis, velit ac iaculis efficitur, tortor erat porta turpis, blandit viverra nunc mi ut velit. Donec neque erat, viverra eu tempus sed, mattis a nulla. Nam molestie, ex eu maximus congue, purus ipsum faucibus neque, non semper nisi diam eu orci. Fusce in metus a leo vestibulum bibendum nec rutrum risus. Nam non dui eget lacus gravida vestibulum. Vestibulum ornare non ligula sit amet suscipit. Donec eget ligula pretium, vestibulum orci ut, semper nisi.</p>\r\n\r\n<p>Aliquam erat volutpat. Nulla quis vestibulum odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam commodo vitae turpis nec faucibus. Quisque ultrices, ex a tincidunt volutpat, diam nisi porttitor enim, ac rutrum tellus nibh pretium nisi. Nulla non augue non tellus pretium vehicula. Sed pharetra tortor id dignissim imperdiet. Fusce ut tincidunt massa. Donec vitae sem eleifend, pretium dolor in, vehicula elit. Donec maximus, libero in maximus ornare, elit elit posuere libero, vel sodales enim arcu ut lorem. Duis varius quis elit vel sollicitudin. Sed vulputate at justo id tincidunt. Donec laoreet facilisis sapien, eget lobortis enim molestie et.</p>\r\n\r\n<p>Phasellus fringilla erat ac sollicitudin consectetur. Aenean at mauris in mi varius rutrum ac efficitur ex. Donec justo lacus, semper ut nunc in, sollicitudin pulvinar ex. Maecenas suscipit sit amet enim eget bibendum. Nullam feugiat ligula urna, id consequat risus semper at. Maecenas in condimentum felis. Nunc pellentesque id dolor vel fermentum. Morbi semper commodo leo, sit amet bibendum est. Maecenas pretium nisi sed nunc euismod, eu tristique ipsum dapibus. Phasellus iaculis ipsum in lorem ultricies aliquam non sit amet sem. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>\r\n', '', 'PC.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -62,10 +61,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `email`, `username`, `password`) VALUES
-(21, 'jchandravanshi30@gmail.com', 'Jatin Chandravanshi', '$2y$10$qygFs/tOxhZsQ/w3P6APXeMZ2tmDX8fcuEVIlKXRg8qP6B40pp/Dm'),
-(22, 'nilesh25@gmail.com', 'Nilesh', '$2y$10$tobumPR/DDvmDWe9/LL0HOn4htiQoaqXCusMtR3N63DhmAvlGB4/u'),
-(23, 'kishan@gmail.com', 'kishan', '$2y$10$4uYKJVbAAyTd06nYn6wr9unvzG4WEhXvRh244N5VxAEmaSQEHz4Z.'),
-(24, 'kishan@gmail.com', 'kishan', '$2y$10$SOD.LwIm/SI90ixm9ERC6uidtw3r2jEyHaiHQJmA5cSagztlsNT1e');
+(25, 'jchandravanshi30@gmail.com', 'Jatin@27', '$2y$10$m8TzYHQJC9dpuLsGcNyYl.CMyobS.d6d64kxdeWiRlSWsmWKzE3ui');
 
 --
 -- Indexes for dumped tables
@@ -91,13 +87,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

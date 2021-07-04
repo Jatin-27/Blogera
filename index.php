@@ -9,7 +9,7 @@ include "includes/slider.php";
 
 <div class="row">
     <!-- this is main content area -->
-    <div class="col l9 m9 s12">
+    <div class="col l9 m8 s12">
         <div class="collection purple darken-4">
             <h5 class="white-text center">Our posts</h5>
         </div>
@@ -21,20 +21,21 @@ include "includes/slider.php";
             while($row=mysqli_fetch_assoc($res))
             {
         ?>
-        <div class="col l4 m4 s12">
+        <div class="col l4 m6 s12">
             <div class="card medium z-depth-2 hoverable">
                 <div class="card-image">
                     <img src="img/<?php echo $row['feature_image'];?>" alt="">
-                    <span class="card-title truncate" style="font-size:16px;"><?php echo $row['title'];?></span>
+                    <span class="card-title truncate" style="font-size:16px; background-color:rgba(0, 0, 0, 0.2)"><?php echo $row['title'];?></span>
                 </div>
                 <div class="card-content">
-                <?php echo $row['content'];?>
+                <?php echo substr($row['content'],0,125);?> ...
                 </div>
                 <div class="card-action purple darken-4 center">
                     <a href="post.php?id=<?php echo $row['id'];?>" class=" white-text">read more</a>
                 </div>
             </div>
         </div>
+
         <?php
             }
         }

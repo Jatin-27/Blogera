@@ -33,7 +33,7 @@ include "includes/navbar.php";
         <div class="card z-depth-1 hoverable blue accent-2">
                 <div class="card-image" >
                     <img src="img/<?php echo $row['feature_image'];?>" class="responsive-img" alt="">
-                    <span class="card-title flow-text"><?php echo ucwords($title);?></span>
+                    <span class="card-title flow-text"><?php echo ucwords($title); ?></span>
                 </div>
                 <div class="card-content" style="font-size:17px;">
                 <?php echo $content;?>

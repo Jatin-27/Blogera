@@ -4,7 +4,7 @@
     <div class="navbar-fixed">
         <nav class="purple darken-4">
             <div class="nav-wrapper" >
-                <a href="index.php" class="brand-logo" style="padding-left:20px;">Blogerz</a>
+                <a href="index.php" class="brand-logo" style="padding-left:20px;">Blogbita</a>
                     <ul class="left hide-on-large-only">
                         <li><a href="#!" class="sidenav-trigger" data-activates="slide-out"><i class="material-icons right">menu</i></a></li>
                     </ul>

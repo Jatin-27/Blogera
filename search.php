@@ -24,10 +24,10 @@ if(mysqli_num_rows($res)>0)
                 <div class="card medium z-depth-2 hoverable">
                         <div class="card-image">
                             <img src="img/<?php echo $row['feature_image'];?>" alt="">
-                            <span class="card-title truncate" style="font-size:16px;"><?php echo $row['title'];?></span>
+                            <span class="card-title truncate" style="font-size:16px; background-color:rgba(0, 0, 0, 0.2)"><?php echo $row['title'];?><span>
                         </div>
                         <div class="card-content">
-                        <?php echo $row['content'];?>
+                        <?php echo substr($row['content'],0,125);?> ...
                         </div>
                         <div class="card-action purple darken-4 center">
                             <a href="post.php?id=<?php echo $row['id'];?>" class=" white-text">read more</a>

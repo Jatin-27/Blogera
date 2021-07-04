@@ -9,10 +9,14 @@ include "includes/slider.php";
 
 <div class="row">
     <!-- this is main content area -->
-    <div class="col l9 m8 s12">
-        <div class="collection purple darken-4">
-            <h5 class="white-text center">Our posts</h5>
+    <div class="col l9 m12 s12">
+        
+        <div class="collection white flow-text" style="border:none; margin-left:10px;">
+            <blockquote class="grey-text text-darken-3"style="border-color:#ffa500; border-width: 10px;margin:0px;">
+            <h4 style="font-weight:500;">Latest Posts</h4>
+            </blockquote>
         </div>
+
         <?php
         $sql="select * from posts order by id DESC";
         $res=mysqli_query($conn,$sql);
@@ -30,8 +34,8 @@ include "includes/slider.php";
                 <div class="card-content">
                 <?php echo substr($row['content'],0,125);?> ...
                 </div>
-                <div class="card-action purple darken-4 center">
-                    <a href="post.php?id=<?php echo $row['id'];?>" class=" white-text">read more</a>
+                <div class="card-action center" style="background-color:#ffa500;" >
+                    <a href="post.php?id=<?php echo $row['id'];?>" class=" white-text" >read more</a>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="card-panel z-depth-3 col l12 m12 s12">
+    <div class="col s12" style="padding:0px;">
         <div class="slider">
            <ul class="slides">               
                 <li>

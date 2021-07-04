@@ -1,10 +1,10 @@
 
 <!-- navigation-bar -->
-<body class="grey lighten-2">
+<body style="background-color:#f5f5f6;">
     <div class="navbar-fixed">
-        <nav class="purple darken-4">
+        <nav style="background-color:#ffa500;">
             <div class="nav-wrapper" >
-                <a href="index.php" class="brand-logo" style="padding-left:20px;">Blogbita</a>
+                <a href="index.php" class="brand-logo" style="padding-left:30px;">Blogbita</a>
                     <ul class="left hide-on-large-only">
                         <li><a href="#!" class="sidenav-trigger" data-activates="slide-out"><i class="material-icons right">menu</i></a></li>
                     </ul>
@@ -21,10 +21,10 @@
 
     <ul id="slide-out" class="side-nav"> <!--side-nav class is used just to hide this ul -->
         <li class="hide-on-large-only">
-            <a href="#!"><i class="material-icons left">person</i>Admin</a>
-            <div class="divider"></div></<div>
+            <a href="Admin/login.php"><i class="material-icons left">person</i>Admin</a>
+            <!-- <div class="divider"></div></<div> -->
         </li>
-        <li>
+        <!-- <li>
             <ul class="collapsible">
                 <li>
                     <div class="collapsible-header"><i class="material-icons left">expand_more</i>Select categories</div>
@@ -136,6 +136,6 @@
                     </div>
                 </li>
             </ul>
-        </li>
-        <div class="divider"></div>
+        </li> -->
+        <!-- <div class="divider"></div> -->
    </ul>

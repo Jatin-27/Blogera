@@ -30,10 +30,10 @@ include "includes/navbar.php";
             $title=$row['title'];
             $content=$row['content'];
     ?>
-        <div class="card z-depth-1 hoverable blue accent-2">
+        <div class="card z-depth-0">
                 <div class="card-image" >
                     <img src="img/<?php echo $row['feature_image'];?>" class="responsive-img" alt="">
-                    <span class="card-title flow-text"><?php echo ucwords($title); ?></span>
+                    <span class="card-title flow-text" style="background-color:rgba(0, 0, 0, 0.2)"><?php echo ucwords($title); ?></span>
                 </div>
                 <div class="card-content" style="font-size:17px;">
                 <?php echo $content;?>
@@ -55,8 +55,10 @@ include "includes/navbar.php";
 
     <!-- related blog area -->
     <div class="col l9 m9 s12">
-        <div class="collection pink ">
-                <h5 class="white-text center">Related Posts</h5>
+        <div class="collection white flow-text" style="border:none; margin-left:10px;">
+            <blockquote class="grey-text text-darken-3"style="border-color:#ffa500; border-width: 10px;margin:0px;">
+            <h4 style="font-weight:500;">Related Posts</h4>
+            </blockquote>
         </div>
 
         <?php
@@ -68,12 +70,15 @@ include "includes/navbar.php";
             {
         ?>
         <div class="col l3 m3 s6">
-            <div class="card z-depth-2 hoverable">
+            <div class="card small z-depth-2 hoverable">
                 <div class="card-image">
                     <img src="img/<?php echo $row['feature_image'];?>" alt="">
-                    <span class="card-title truncate" style="font-size:16px;"><?php echo $row['title'];?></span>
+                    <span class="card-title truncate" style="font-size:16px; background-color:rgba(0, 0, 0, 0.2)"><?php echo $row['title'];?></span>
                 </div>
-                <div class="card-action blue accent-2 center">
+                <div class="card-content">
+                <?php echo substr($row['content'],0,75);?> ...
+                </div>
+                <div class="card-action center" style="background-color:#ffa500;">
                     <a href="post.php?id=<?php echo $row['id'];?>" class=" white-text">read more</a>
                 </div>
             </div>

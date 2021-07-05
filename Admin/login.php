@@ -16,12 +16,12 @@
   <title>Admin-Dashboard</title>
 </head>
 
-<body class="grey">
+<body style="background-image: url('../img/Background.jpg');background-repeat:no-repeat; background-size:cover;">
 <div>
 <div class="row" style="margin-top:120px;">
     <div class="col l6 offset-l3 m8 offset-m2 s12">
-        <div class="card-panel center purple darken-4" style="margin-bottom:0px;">
-            <ul class="tabs purple darken-4">
+        <div class="card-panel center " style="margin-bottom:0px;background-color:#ffa500;">
+            <ul class="tabs" style="background-color:#ffa500;">
                 <li class="tab">
                     <a href="#login" class="white-text">Login</a>
                 </li>
@@ -47,7 +47,7 @@
                     <div class="input-field">
                         <input type="password" name="password" placeholder="Password">
                     </div>
-                    <input type="submit" name="login" value="Login" class="btn green darken-2 black-text">
+                    <input type="submit" name="login" value="Login" class="btn green darken-1 white-text">
                 </form>
             </div>
         </div>
@@ -70,7 +70,7 @@
                  <input type="password" name="password" placeholder="Password">
                  </div>
 
-                 <input type="submit" name="signup" class="btn green lighten-1 black-text" value="Sign Up">
+                 <input type="submit" name="signup" class="btn green darken-1 white-text" value="Sign Up">
 
                 </form>   
             </div>

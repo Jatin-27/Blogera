@@ -7,10 +7,10 @@ if(isset($_SESSION['username']))
 <div class="row main">
 
     <div class="col l12 m12 s12">
-        <div class="card-panel" >
+        <div  >
         <span id="message"></span>
         <ul class="collection with-header">
-                <li class="collection-header purple darken-4 white-text">
+                <li class="collection-header white-text" style="background-color:#14151D;">
                    <h5> Recent posts</h5>
                    
                 </li>
@@ -41,7 +41,7 @@ if(isset($_SESSION['username']))
         </ul>
         </div>
         <div class="fixed-action-btn">
-            <a href="write.php" class=" btn-floating btn btn-large white-text purple darken-4 pulse"><i class="material-icons">edit</i></a>
+            <a href="write.php" class=" btn-floating btn btn-large white-text pulse" style="background-color:#ffa500;"><i class="material-icons">edit</i></a>
         </div>
      </div>
 

@@ -31,10 +31,10 @@ if(isset($_SESSION['username']))
 
 <!-- nav bar -->
 
-<nav class="purple darken-4">
+<nav style="background-color:#ffa500;">
     <div class="nav-wrapper">
         <div class="container">
-            <a href="../index.php" class="brand-logo center">Blogerz</a>
+            <a href="../index.php" class="brand-logo center">Blogbita</a>
             <a href="" class="button-collapse hide-on-large" data-activates="sidenav"> <i class="material-icons">menu</i> </a>
         </div>
     </div>
@@ -46,7 +46,7 @@ if(isset($_SESSION['username']))
     <li>
         <div class="user-view">
             <div class="background">
-                <img src="../img/vector.jpg" alt="" class="responsive-img">
+                <img src="../img/background-2.jpg" alt="" class="responsive-img">
             </div>
         <a href=""><img src="../img/square1.jpg" class="circle"></a>
         <span class="name white-text"><?php echo $_SESSION['username']; ?></span>

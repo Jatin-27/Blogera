@@ -10,7 +10,7 @@ if(isset($_SESSION['username']))
         <div class="col l6 m6 s12">
         
         <ul class="collection with-header">
-                <li class="collection-header purple darken-4 white-text">
+                <li class="collection-header white-text" style="background-color:#14151D;">
                    <h5> Recent posts</h5>
                    
                 </li>
@@ -43,7 +43,7 @@ if(isset($_SESSION['username']))
     </div>
         <div class="col l6 m6 s12">
             <ul class="collection with-header">
-                <li class="collection-header purple darken-4 white-text">
+                <li class="collection-header white-text" style="background-color:#14151D;">
                    <h5> Recent Comments</h5>
                 </li>
                 <li class="collection-item">
@@ -81,7 +81,7 @@ if(isset($_SESSION['username']))
 </div>
 
 <div class="fixed-action-btn">
-    <a href="write.php" class=" btn-floating btn btn-large white-text purple darken-4 pulse"><i class="material-icons">edit</i></a>
+    <a href="write.php" class=" btn-floating btn btn-large white-text pulse" style="background-color:#ffa500;"><i class="material-icons">edit</i></a>
 </div>
 
 <script>
